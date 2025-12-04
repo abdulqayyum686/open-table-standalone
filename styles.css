@@ -12,7 +12,8 @@
 }
 
 body {
-  font-family: "Nantes";
+  /* font-family: "Nantes"; */
+  font-family: "Lora", "Times New Roman", Times, serif;
   background-image: url('background-pattern.png'); /* Add your background image path here */
   background-size: cover;
   background-position: center;
@@ -26,7 +27,7 @@ body {
 }
 
 .calculator-container {
-  background: var(--salt);
+  background: var(--almond);
   border-radius: 12px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   max-width: 550px;
@@ -72,11 +73,20 @@ body {
   position: relative;
 }
 
+.input-label {
+  display: block;
+  font-size: 16px;
+  color: var(--merlot);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
 input[type="number"] {
   width: 100%;
   padding: 12px 12px;
   font-size: 16px;
-  border: 2px solid var(--gazpacho);
+  border: 3px solid var(--gazpacho);
+  background: var(--almond);
   border-radius: 5px;
   color: var(--merlot);
   transition: all 0.3s ease;
@@ -101,24 +111,12 @@ input[type="number"]::placeholder {
   color: #999;
 }
 
-/* Currency prefix */
-.currency-symbol {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #666;
-  font-size: 14px;
-  font-weight: 500;
-  pointer-events: none;
-}
-
 /* Results Section */
 .results-heading {
   font-size: 22px;
   font-weight: 700;
   color: var(--gazpacho);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .table-wrapper {
@@ -137,11 +135,11 @@ thead {
 th {
   padding: 5px 15px;
   text-align: left;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--merlot);
   letter-spacing: 0.5px;
-  border: 1px solid #ddd;
+  border: 2px solid var(--merlot);
 }
 
 td {
@@ -151,7 +149,7 @@ td {
   font-size: 15px;
   color: var(--merlot);
   font-weight: 500;
-  border: 1px solid #ddd;
+  border: 2px solid var(--merlot);
 }
 
 td:first-child {
@@ -185,6 +183,7 @@ tr:hover {
   color: var(--merlot);
   margin: 10px 0;
   line-height: 1.4;
+  font-weight: 600;
 }
 
 /* CTA Button */

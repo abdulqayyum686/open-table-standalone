@@ -8,6 +8,10 @@
       d="M0 47.998c0-6.556 5.313-11.873 11.866-11.873s11.868 5.317 11.868 11.873c0 6.56-5.315 11.877-11.868 11.877S0 54.558 0 47.998zm83.354 11.877c-6.553 0-11.865-5.317-11.865-11.876 0-6.557 5.312-11.874 11.865-11.874 6.554 0 11.869 5.317 11.869 11.874 0 6.559-5.315 11.876-11.869 11.876zM83.356.5C57.14.5 35.888 21.767 35.888 47.999c0 26.235 21.252 47.501 47.468 47.501 26.217 0 47.468-21.266 47.468-47.501C130.824 21.767 109.573.5 83.356.5z"
       fill="#DA3743"
     ></path> -->
+    <!-- Google Fonts - Lora (similar to Times New Roman) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!-- Nantes Font - OpenTable Premium Typeface -->
     <style>
       @font-face {
@@ -103,21 +107,21 @@
             alt="logo"
           />
         </div>
-        <h1 class="main-heading">Unlock Your Revenue Potential</h1>
+        <h1 class="main-heading">Future Revenue Calculator</h1>
       </div>
 
       <!-- Input Section -->
       <div class="input-section">
         <div class="input-wrapper">
+          <label for="averageSpend" class="input-label">Add Your Average Spend Per Guest</label>
           <input
             type="number"
             id="averageSpend"
-            placeholder="Add Your Average Spend Per Guest"
-            value="25.00"
+            placeholder="Enter your average spend here..."
+            value="25"
             min="0"
             step="0.01"
           />
-          <span class="currency-symbol">25.00</span>
         </div>
       </div>
 
@@ -128,7 +132,7 @@
           <table>
             <thead>
               <tr>
-                <th>OpenTable Diners per Month</th>
+                <th>Projected Monthly OpenTable Diners</th>
                 <th>Monthly Revenue (£)</th>
                 <th>Annual Revenue (£)</th>
               </tr>
@@ -138,12 +142,12 @@
                 <td>100</td>
                 <td>
                   <span class="animated-value" data-tier="100-monthly"
-                    >£2,500.00</span
+                    >£2,500</span
                   >
                 </td>
                 <td>
                   <span class="animated-value-last" data-tier="100-annual"
-                    >£30,000.00</span
+                    >£30,000</span
                   >
                 </td>
               </tr>
@@ -151,12 +155,12 @@
                 <td>200</td>
                 <td>
                   <span class="animated-value" data-tier="200-monthly"
-                    >£5,000.00</span
+                    >£5,000</span
                   >
                 </td>
                 <td>
                   <span class="animated-value-last" data-tier="200-annual"
-                    >£60,000.00</span
+                    >£60,000</span
                   >
                 </td>
               </tr>
@@ -164,12 +168,12 @@
                 <td>300</td>
                 <td>
                   <span class="animated-value" data-tier="300-monthly"
-                    >£7,500.00</span
+                    >£7,500</span
                   >
                 </td>
                 <td>
                   <span class="animated-value-last" data-tier="300-annual"
-                    >£90,000.00</span
+                    >£90,000</span
                   >
                 </td>
               </tr>
