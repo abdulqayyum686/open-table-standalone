@@ -1,0 +1,223 @@
+/* Root color palette - OpenTable Brand */
+:root {
+  --gazpacho: #ec043d; /* Primary Red */
+  --merlot: #300610; /* Dark Burgundy */
+  --almond: #f3f0e8; /* Light Warm Neutral */
+  --salt: #ffffff; /* White */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nantes";
+  background-image: url('background-pattern.png'); /* Add your background image path here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.calculator-container {
+  background: var(--salt);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  max-width: 550px;
+  width: 100%;
+  padding: 40px;
+  position: relative;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.main-heading {
+  color: var(--merlot);
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 640px) {
+  .main-heading {
+    font-size: 26px;
+  }
+}
+
+/* Input Section */
+.input-section {
+  margin-bottom: 25px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px 12px;
+  font-size: 16px;
+  border: 2px solid var(--gazpacho);
+  border-radius: 5px;
+  color: var(--merlot);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  /* Hide spinner arrows */
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: var(--gazpacho);
+}
+
+input[type="number"]::placeholder {
+  color: #999;
+}
+
+/* Currency prefix */
+.currency-symbol {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+/* Results Section */
+.results-heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gazpacho);
+  margin-bottom: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f9f9f9;
+}
+
+th {
+  padding: 5px 15px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--merlot);
+  letter-spacing: 0.5px;
+  border: 1px solid #ddd;
+}
+
+td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid #efefef;
+  font-size: 15px;
+  color: var(--merlot);
+  font-weight: 500;
+  border: 1px solid #ddd;
+}
+
+td:first-child {
+  text-align: left;
+  color: var(--merlot);
+  font-weight: 600;
+}
+
+tr:hover {
+  background: #f9f9f9;
+}
+
+/* Animated values */
+.animated-value {
+  display: inline-block;
+  min-width: 80px;
+  color: var(--merlot);
+  font-weight: 700;
+}
+
+.animated-value-last {
+  display: inline-block;
+  min-width: 80px;
+  color: var(--gazpacho);
+  font-weight: 700;
+}
+
+/* Disclaimer */
+.disclaimer {
+  font-size: 12px;
+  color: var(--merlot);
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+/* CTA Button */
+.cta-button {
+  width: 100%;
+  padding: 12px;
+  background: var(--gazpacho);
+  color: var(--salt);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 640px) {
+  .calculator-container {
+    padding: 30px 20px;
+  }
+
+  .main-heading {
+    font-size: 20px;
+  }
+
+  th,
+  td {
+    padding: 8px 8px;
+    font-size: 13px;
+  }
+
+  .results-heading {
+    font-size: 18px;
+  }
+}
+
